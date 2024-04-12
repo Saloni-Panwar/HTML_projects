@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="LOGIN.css">
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <header>
+        <h1 class="heading">jee exam form</h1>
+        <h2 class="title"> Login & Registration Form</h2>
+    </header>
+    <div class="container">
+        <div class="slider"></div>
+        <div class="btn">
+            <button type="submit" class="login">login</button>
+            <button type="submit" class="signup">signup</button>
+        </div>
+        <form action="userinformation.html" onsubmit="return validateForm()">
+            <div class="form-section">
+                <div class="login-box">
+                    <input type="email" class="email ele" placeholder="youremail@email.com" required>
+                    <input type="password" class="password ele" id="loginPassword" placeholder="password" required>
+                    <div id="loginError" class="error-message"></div>
+                    <input type="submit" value="submit" id="submit">
+                </div>
+        </form>
+        <form action="userinformation.html" onsubmit="return validationForm()">
+            <div class="form-section">
+                <div class="signup-box">
+                    <input type="text" class="name ele" placeholder="Enter your name" required>
+                    <input type="email" class="email ele" placeholder="youremail@email.com" required>
+                    <input type="password" class="password ele" id="signupPassword" placeholder="password" required>
+                    <div id="signError" class="error-message"></div>
+                    <input type="password" class="password ele" id="confirmPassword" placeholder="Confirm password" required>
+                    <input type="submit" value="submit" id="submit">
+                </div>
+            </div>
+    </div>
+    </form>
+    </div>
+    <script src="LOGIN.js"></script>
+</body>
+
+</html>

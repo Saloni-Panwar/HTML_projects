@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:ital,wght@0,500;1,600&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  ;
+  font-family: serif;
+  background: linear-gradient(#f8f9fa, #e9ecef);
+  text-transform: capitalize;
+
+}
+.container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 800px;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background: #b5c5da;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  background-color: rgb(245, 235, 235);
+  box-shadow: 8px 8px 20px rgb(128, 128, 128);
+  /* overflow: hidden; */
+  /* margin-top: 5%; */
+  overflow-y: auto;
+
+}
+
+h2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: rgb(17, 4, 161);
+}
+
+.input {
+  height: 40px;
+  width: 450px;
+  outline: none;
+  border: none;
+  color: rgb(105, 104, 104);
+  background-color: rgb(236, 232, 232);
+
+  border-radius: 50px;
+  border-radius: 2px solid black;
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+#check {
+  font-size: 25px;
+  margin-left: 35px;
+}
+
+#check1,
+#check2 {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#additionalInfoCheckbox {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+
+#declarationCheckbox {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1 6px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#previousAttemptsCheckbox{
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1 6px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.check3,
+.check4 {
+  font-size: 25px;
+  margin-left: 35px;
+    /* position: relative;  */
+}
+.check5{
+  font-size: 25px;
+  margin-left: 25px;
+    /* position: relative;  */
+}
+
+
+
+form {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  position: relative;
+  width: 150px;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid rgb(167, 167, 200);
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+label,
+select {
+  display: flex;
+  margin-right: 10px;
+}
+
+select {
+  width: 100px;
+}
+
+.left {
+  width: 40%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  clear: left;
+}
+
+#authenticity,
+#termsConsent {
+  width: 55%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  /* border: 2px solid rgb(145, 141, 141); */
+}
+
+.option {
+  margin-right: 100px;
+  margin-top: 0px;
+  float: right;
+  width: auto;
+  margin: 0px;
+}
+
+/* .option {
+  width: 100px;
+  margin-top: 0px;
+} */
+
+#isDASA {
+  margin-right: 70px;
+  margin-bottom: 20px;
+}
+
+#submit {
+  height: 60px;
+  width: 150px;
+  border-radius: 50px;
+  background-image: linear-gradient(rgb(110, 158, 255), rgb(94, 91, 255));
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin: 15px;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+.container .inputtype input {
+  border: 2px solid rgb(145, 141, 141);
+}
+
+#authenticity1,
+#termsConsent1,
+#choiceOfPaper,
+#projects {
+  border: 2px solid rgb(145, 141, 141);
+  width: 55%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  font-size: 16px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="info.css">
+    <title>USER INFORMATION</title>
+</head>
+<body>
+    <h2 class="info">Personal Information</h2>
+    <div class="container">
+        <form  action="ACADEMIC_DETAILS.HTML" id="form">
+            <!-- Personal Information -->
+            <input type="text" id="fullName" name="fullName" class="input" placeholder="Full Name" required>
+            <input type="date" id="dob" class="input" name="dob" placeholder="Date of Birth" required>
+            <select id="gender" class="input" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <select id="nationality" class="input" name="nationality" required>
+                <option value="indian">Indian</option>
+                <option value="american">American</option>
+                <option value="british">British</option>
+                <option value="canadian">Canadian</option>
+                <option value="australian">Australian</option>
+                <option value="german">German</option>
+                <option value="french">French</option>
+                <option value="russian">Russian</option>
+                <option value="brazilian">Brazilian</option>
+                <option value="south-african">South African</option>
+                <option value="italian">Italian</option>
+                <option value="spanish">Spanish</option>
+                <option value="swiss">Swiss</option>
+                <option value="belgian">Belgian</option>
+            </select>
+            <input type="text" id="aadharCard" class="input" name="aadharCard" placeholder="Aadhar Card Number"
+                required>
+            <select id="category" class="input" name="category" required>
+                <option value="general">General</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+                <option value="obc">OBC</option>
+            </select>
+            <input type="text" id="disability" class="input" name="disability"
+                placeholder="Disability Information (if applicable)">
+                
+            <h3>Contact Information:</h3>
+            <input type="email" id="emailAddress" class="input" name="emailAddress" placeholder="Email Address"required>
+            <input type="tel" id="contactNumber" class="input" name="contactNumber" placeholder="Contact Number" required>
+            <textarea id="permanentAddress" class="input" name="permanentAddress" placeholder="Permanent Address"required></textarea>
+            <input type="submit" value="submit" id="submit">
+        </form>
+    </div>
+    <script src="info.js"></script>
+</body>
+</html>

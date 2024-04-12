@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Details </title>
+    <link rel="stylesheet" href="acedmic.css">
+    <link rel="stylesheet" href="color.css">
+</head>
+
+<body>
+    <div class="color-switcher">
+        <div class="switcher-btn">
+            <i class="fas fa-cog "></i>
+        </div>
+        <h3>select color</h3>
+        <div class="theme-btn-container">
+            <span class="theme-btn" data-color="#c1121f" style="background:#c1121f;"></span>
+            <span class="theme-btn" data-color="#588157" style="background:#588157;"></span>
+            <span class="theme-btn" data-color="#c47888" style="background:#c47888;"></span>
+            <span class="theme-btn" data-color="#aa6337" style="background:#aa6337;"></span>
+            <span class="theme-btn" data-color="#4d4fc4" style="background:#4d4fc4;"></span>
+            <span class="theme-btn" data-color="#6cc24f" style="background:#6cc24f;"></span>
+        </div>
+    </div>
+    <div class="containercolor">
+        <h1>color switcher</h1>
+    </div>
+
+    <div class="container">
+        <h2>Academic Details</h2>
+        <form id="form" onsubmit="validateForm(event);" class="inputtype">
+            <input type="checkbox" id="check1" name="educationType" onclick="HighSchoolDetails()">
+            <label for="check1" id="check"><span>High school Education </span></label>
+            <div id="highSchoolDetails" style="display:none;">
+
+                <label for="board10" class="left">Board/University Name (10th Standard):</label>
+                <input type="text" id="board10" name="board10" class="input" required>
+
+                <label for="year10" class="left">Year of Passing (10th Standard):</label>
+                <input type="number" id="year10" class="input" name="year10" required>
+
+                <label for="percentage10" class="left">Percentage/CGPA (10th Standard):</label>
+                <input type="number" id="percentage10" class="input" name="percentage10" step="0.01" required>
+
+                <label for="board12" class="left">Board/University Name (12th Standard):</label>
+                <input type="text" id="board12" class="input" name="board12" required>
+
+                <label for="year12" class="left">Year of Passing (12th Standard):</label>
+                <input type="number" id="year12" class="input" name="year12" required>
+
+                <label for="percentage12" class="left">Percentage/CGPA (12th Standard):</label>
+                <input type="number" id="percentage12" class="input" name="percentage12" step="0.01" required>
+            </div>
+
+            <label class="custom-checkbox" for="check2">
+                <input type="checkbox" id="check2" class="input" name="examCenterType" onclick="ExamCenterDetails()">
+                <span id="check">Choice of Examination Center </span>
+                <span class="checkmark"></span>
+            </label>
+
+            <div id="examCenterDetails" style="display: none;">
+                <label for="preferredCity" class="left">Preferred Exam City:</label>
+                <input type="text" id="preferredCity" class="input" name="preferredCity" required>
+
+                <label for="secondChoiceCity" class="left">Second Choice Exam City:</label>
+                <input type="text" id="secondChoiceCity" class="input" name="secondChoiceCity" required>
+
+                <label for="thirdChoiceCity" class="left">Third Choice Exam City:</label>
+                <input type="text" id="thirdChoiceCity" class="input" name="thirdChoiceCity" required>
+            </div>
+
+            <div>
+                <input type="checkbox" id="additionalInfoCheckbox" class="input" name="additionalInfoCheckbox"
+                    onclick="AdditionalInfo()">
+                <label for="additionalInfoCheckbox" class="check3"><span>Additional Information </span></label>
+                <div id="additionalInfoDetails" style="display:none;">
+                    <label for="modeOfExamination" class="left">Mode of Examination (Online/Offline):</label>
+                    <input type="text" id="modeOfExamination" class="input" name="modeOfExamination">
+                    <label for="choiceOfPaper" class="left">Choice of JEE Paper (e.g., Paper 1, Paper 2)::</label>
+                    <select id="choiceOfPaper" class="input" name="choiceOfPaper">
+                        <option value="Paper1">Paper 1</option>
+                        <option value="Paper2">Paper 2</option>
+                    </select>
+
+                    <label for="preference" class="left">preference (Choice of Engineering Branch): </label>
+                    <select id="choiceOfEngineering" class="input" name="choiceOfEngineering">
+                        <option value="EE">Electrical Engineering</option>
+                        <option value="CSE">Computer Science Engineering</option>
+                        <option value="ME">Mechanical Engineering</option>
+                    </select>
+
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" id="declarationCheckbox" class="input" name="declarationCheckbox"
+                    onclick="Declaration()">
+                <label for="declarationCheck" class="check4"><span>Declaration and Consent </span></label>
+                <div id="declarationDetails" style="display:none;">
+                    <label for="authenticity" class="left">Declaration of Authenticity of Information:</label>
+                    <textarea id="authenticity1" name="authenticity" class="input"></textarea>
+                    <label for="termsConsent" class="left">Consent to Terms and Conditions:</label>
+                    <textarea id="termsConsent1" name="termsConsent" class="input"></textarea>
+                </div>
+
+                <input type="submit" value="submit" id="submit">
+        </form>
+    </div>
+    <script src="acedmic.js"></script>
+    <!-- <script src="popup.js"></script>  -->
+</body>
+
+</html>
